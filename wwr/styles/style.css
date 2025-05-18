@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1em;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1em;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 50px;
+}
+
+#hero {
+  text-align: center;
+  padding: 4em 1em;
+  background-color: #396e94;
+  color: white;
+}
+
+#hero-msg h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#hero-msg h4 {
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.book {
+  background-color: #a42212;
+  color: white;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.book:hover {
+  background-color: #8f1e10;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5em;
+  padding: 2em 1em;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5em;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+#highlight-section {
+  background-image: url('images/mountains.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4em 2em;
+  position: relative;
+}
+
+.highlight-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.highlight-card h2 {
+  margin-top: 0;
+}
+
+.join {
+  display: inline-block;
+  background-color: #a42212;
+  color: white;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.join:hover {
+  background-color: #8f1e10;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer p, footer a {
+  margin: 0.5em 0;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .social img {
+  width: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
