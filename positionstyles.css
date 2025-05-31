@@ -33,6 +33,50 @@
 
 /* Activity 2 styles */ 
 
+.content2 {
+  position: relative;
+  height: 400px;
+}
+
+/* Base box styling */
+.content2 > div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+/* Red - bottom layer */
+.red2 {
+  background-color: red;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Green */
+.green2 {
+  background-color: green;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+
+/* Yellow */
+.yellow2 {
+  background-color: gold;
+  top: 100px;
+  left: 100px;
+  z-index: 3;
+}
+
+/* Blue - top layer */
+.blue2 {
+  background-color: blue;
+  top: 150px;
+  left: 150px;
+  z-index: 4;
+}
+
 
 
 /* Activity 3 styles */ 
