@@ -42,14 +42,14 @@
   height: 400px;
 }
 
-/* Base box styling */
+
 .content2 > div {
   width: 100px;
   height: 100px;
   position: absolute;
 }
 
-/* Red - bottom layer */
+
 .red2 {
   background-color: red;
   top: 0;
@@ -57,7 +57,7 @@
   z-index: 1;
 }
 
-/* Green */
+
 .green2 {
   background-color: green;
   top: 50px;
@@ -65,7 +65,6 @@
   z-index: 2;
 }
 
-/* Yellow */
 .yellow2 {
   background-color: gold;
   top: 100px;
@@ -73,7 +72,7 @@
   z-index: 3;
 }
 
-/* Blue - top layer */
+
 .blue2 {
   background-color: blue;
   top: 150px;
@@ -86,40 +85,35 @@
 /* Activity 3 styles */ 
 .content3 {
   display: grid;
-  grid-template-columns: 1fr 100px 1fr; /* Middle column for white space */
+  grid-template-columns: 1fr 100px 1fr; 
   grid-template-rows: 100px 100px 100px;
   gap: 0;
 }
 
-/* Red spans full width */
 .red3 {
   background-color: red;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
 }
 
-/* Green on left */
 .green3 {
   background-color: green;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 
-/* Yellow on right */
 .yellow3 {
   background-color: gold;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
 }
 
-/* Blue spans full bottom */
 .blue3 {
   background-color: blue;
   grid-column: 1 / 4;
   grid-row: 3 / 4;
 }
 
-/* Set consistent size for all boxes */
 .red3, .green3, .yellow3, .blue3 {
   width: 100%;
   height: 100px;
@@ -133,7 +127,6 @@
   overflow: auto;
 }
 
-/* Red box floats left and fills the height */
 .red4 {
   width: 50%;
   height: 100%;
@@ -141,7 +134,7 @@
   float: left;
 }
 
-/* Stack the others on the right */
+
 .green4, .yellow4, .blue4 {
   width: 50%;
   height: 100px;
@@ -165,14 +158,13 @@
   overflow: auto;
 }
 
-/* Red bar at the top */
+
 .red5 {
   width: 100%;
   height: 100px;
   background-color: red;
 }
 
-/* Green square that floats left and appears above yellow */
 .green5 {
   width: 150px;
   height: 150px;
@@ -183,8 +175,6 @@
   z-index: 2;
 }
 
-
-/* Yellow section behind green, wrapping text */
 .yellow5 {
   background-color: gold;
   padding: 10px;
@@ -194,7 +184,6 @@
   min-height: 150px;
   overflow: hidden;
 }
-
 
 
 .blue5 {
@@ -212,7 +201,6 @@
   position: relative;
 }
 
-/* 🔴 Red box — bottom layer */
 .red6 {
   background-color: red;
   width: 100%;
@@ -223,7 +211,7 @@
   z-index: 1;
 }
 
-/* 🔵 Blue box — middle layer, shifted to overlap red */
+
 .blue6 {
   background-color: blue;
   width: 100%;
@@ -236,7 +224,7 @@
   z-index: 2;
 }
 
-/* 🟡 Yellow box — top layer, shifted to overlap blue */
+
 .yellow6 {
   background-color: gold;
   width: 100%;
@@ -248,7 +236,7 @@
   z-index: 3;
 }
 
-/* 🟢 Green box — top layer, shifted to overlap blue */
+
 .green6 {
   background-color: green;
   width: 100px;
