@@ -1,27 +1,42 @@
 /* Base Styles */
+:root {
+   --primary-color: #330A1F; 
+  --secondary-color: #0bbac1;
+  --accent1-color: #bb0864;
+  --accent2-color: white;
+
+  --heading-font: "IM Fell French Canon SC", serif;
+  --paragraph-font: Lato, Helvetica, sans-serif;
+}
+
+
+/* Logo */
 .logo img {
-  height: 40px; /* Adjust as needed */
+  height: 40px;
   width: auto;
 }
 
-.home-content {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.home-content h2 {
-  margin-top: 2rem;
-}
-
-
+/* General body */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--paragraph-font);
   background-color: #f8f8f8;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+main {
+  flex: 1;
+}
+
+/* Images */
 img {
   max-width: 100%;
   height: auto;
@@ -29,12 +44,19 @@ img {
 }
 
 /* Header */
+.main-heading {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
   padding: 1rem 2rem;
 }
 
@@ -44,9 +66,10 @@ header {
 }
 
 nav a {
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
   margin-left: 1rem;
+  font-family: var(--paragraph-font);
 }
 
 nav a:hover {
@@ -55,29 +78,43 @@ nav a:hover {
 
 /* Hero Image */
 .hero-image {
-  text-align: center; /* center the image container */
-  margin: 2rem auto;  /* add spacing around the hero section */
+  text-align: center;
+  margin: 2rem auto;
 }
 
 .hero-image img {
-  width: auto;           /* don’t stretch full width */
-  max-width: 80%;        /* control how big it can get on large screens */
-  height: auto;          /* keep aspect ratio */
-  display: inline-block; /* center in container */
-  border-radius: 8px;    /* optional: rounded corners */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* optional: subtle shadow */
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Featured Projects Section */
-
-.projects-content {
+/* Home Page Content */
+.home-content {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-.projects-content h2 {
+.home-content h2 {
   margin-top: 2rem;
+  font-family: var(--heading-font);
+}
+
+/* Featured Projects Section */
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
 
 .featured-projects {
@@ -87,12 +124,13 @@ nav a:hover {
 
 .featured-projects h2 {
   margin-bottom: 2rem;
+  font-family: var(--heading-font);
 }
 
 .project {
   margin: 1rem;
   padding: 1rem;
-  background-color: white;
+  background-color: var(--accent2-color);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   display: inline-block;
@@ -102,6 +140,7 @@ nav a:hover {
 
 .project h3 {
   margin-top: 0.5rem;
+  font-family: var(--heading-font);
 }
 
 .project p {
@@ -109,26 +148,7 @@ nav a:hover {
   margin: 0.5rem 0;
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-footer a {
-  color: #90cdf4;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* About Page CSS */
-
+/* About Page */
 .about-content {
   max-width: 800px;
   margin: 2rem auto;
@@ -137,16 +157,17 @@ footer a:hover {
 
 .about-content h2 {
   margin-top: 2rem;
+  font-family: var(--heading-font);
+  
 }
 
 .about-banner {
   width: 100%;
   height: auto;
-  max-height: 300px; /* adjust as needed */
+  max-height: 300px;
   display: block;
   margin: 0 auto;
 }
-
 
 .about-hero {
   width: 100%;
@@ -199,17 +220,21 @@ footer a:hover {
 .extra-box {
   background-color: #f4f4f4;
   padding: 1em;
-  border-left: 4px solid #396E94;
+  border-left: 4px solid var(--secondary-color);
   max-width: 300px;
 }
 
-
-/* Projects Page CSS */
-
-/* Main heading and description */
+/* Projects Page */
 .projects-header {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.projects-header h1,
+.projects-header h2 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--heading-font);
 }
 
 .projects-description {
@@ -218,7 +243,6 @@ footer a:hover {
   margin: 0 auto 2rem auto;
 }
 
-/* Projects grid */
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
@@ -228,9 +252,8 @@ footer a:hover {
   margin: 0 auto 3rem auto;
 }
 
-/* Individual project item */
 .project-item {
-  background-color: white;
+  background-color: var(--accent2-color);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -248,6 +271,7 @@ footer a:hover {
 .project-item h3 {
   font-size: 1.4rem;
   margin-top: 1rem;
+  font-family: var(--heading-font);
 }
 
 .project-item p {
@@ -255,19 +279,20 @@ footer a:hover {
   margin: 0.5rem 0;
 }
 
-/* Make footer stick to the bottom since content is short */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-main {
-  flex: 1;
+footer a {
+  color: var(--accent2-color);
+  text-decoration: none;
 }
 
-.projects-header h1,
-.projects-header h2 {
-  font-size: 5rem;
-  margin-bottom: 0.5rem;
+footer a:hover {
+  text-decoration: underline;
 }
