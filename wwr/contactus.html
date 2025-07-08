@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Dry Oar Boating</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div id="content">
+    <header>
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo.png" alt="Dry Oar Logo" />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="rivers.html">View Rivers</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main class="contact-main">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Fill out the form below and we’ll get back to you as soon as we can.</p>
+
+      <form action="thanks.html" method="get">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="trip">Interested Trip:</label>
+        <select id="trip" name="trip">
+          <option value="main">Main Fork of the Salmon River</option>
+          <option value="deso">Desolation and Gray Canyons</option>
+          <option value="grand">Grand Canyon</option>
+        </select>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Dry Oar &copy; 2025 - Jonathan Tullis</p>
+      <p><a href="rivers.html">View Rivers</a></p>
+      <p><a href="contactus.html">Contact Us</a></p>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="fb icon" /></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter icon" /></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram icon" /></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
